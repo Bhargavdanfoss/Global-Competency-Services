@@ -2052,3 +2052,15 @@ hr{
   padding: 0px;
   width: 30%;
 }
+
+.twolinedots p{
+  display: -webkit-box; 
+  -webkit-box-orient: vertical; 
+  -webkit-line-clamp: 2; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+.hovereffect a:hover{
+  color: #e2000f!important;
+
+}
