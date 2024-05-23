@@ -268,6 +268,7 @@ video {
   -o-transform: translate(-50%, -50%);
   width: auto;
   z-index: -3;
+  width: 100%;
 }
 iframe,
 embed,
@@ -5511,6 +5512,8 @@ section.dark-block .default-slider .slick-dots li button {
   height: 100vh;
   min-height: 100vh;
 }
+
+/* video bg */
 .hero-text-wrap {
   display: table;
   table-layout: fixed;
@@ -5518,7 +5521,7 @@ section.dark-block .default-slider .slick-dots li button {
   width: 100%;
   position: relative;
   z-index: 200;
-  background-color: rgba(47, 47, 47, 0.45);
+  /* background-color: rgba(47, 47, 47, 0.45); */
 }
 .light-slider .hero-text-wrap {
   background-color: rgba(0, 0, 0, 0);
