@@ -7794,9 +7794,14 @@ hr {
 @media only screen and (max-width: 720px) {
   .view-height-100vh {
     height: 60vh !important;
+
     
 }
 
+
+.fixed{
+  margin-left: 10%;
+}
 video {
   background-size: cover;
   display: table-cell;
