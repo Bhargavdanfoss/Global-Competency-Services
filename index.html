@@ -74,70 +74,7 @@ margin-left: 86%;
 
 
 
-.animated-border-box-glow{
-  /* overflow: hidden; */
-  /* Glow Blur */
-  /* filter: blur(20px); */
-}
 
-.animated-border-box:before, .animated-border-box-glow:before {
-  /* content: '';
-  z-index: -2;
-  text-align: center;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%) rotate(0deg);
-  position: absolute;
-	width: 99999px;
-	height: 99999px;
-	background-repeat: no-repeat;
-	background-position: 0 0; */
-  /*border color, change middle color*/
-	/* background-image: conic-gradient(rgba(255, 40, 40, 0), #ed1919, rgba(0,0,0,0) 25%); */
-  /* change speed here */
-	/* animation: rotate 4s linear infinite; */
-}
-
-.animated-border-box:after {
-	/* content: '';
-	position: absolute;
-	z-index: -1; */
-  /* border width */
-	/* left: 5px;
-	top: 5px; */
-  /* double the px from the border width left */
-	/* width: calc(100% - 10px); */
-	/* height: calc(100% - 10px); */
-  /*bg color*/
-	/* background: #ff0c0c; */
-  /*box border radius*/
-	/* border-radius: 7px; */
-}
-
-/* @keyframes rotate {
-	100% {
-		transform: translate(-50%, -50%) rotate(1turn);
-	}
-} */
-
-
-
-.glow {
-  font-size: 80px;
-  color: #fff;
-  text-align: center;
-  animation: glow 1s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
-}
 
     </style>
   </head>
@@ -267,8 +204,33 @@ margin-left: 86%;
             >
               <li><a class="page-scroll" href="index.html">Home</a></li>
               <li><a class="page-scroll" href="about.html">About us</a></li>
-
-              <li><a class="page-scroll" href="service.html">Services</a></li>
+              <li class="dropdown"><a href="" class="dropdown-toggle page-scroll" data-toggle="dropdown">Services</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="service.html">Supply Chain</a>
+                  </li>
+                  <li>
+                    <a href="procurement.html">Procurement</a>
+                  </li>
+                  <li>
+                    <a href="ecommerce.html">Ecommerce </a>
+                  </li>
+                  <li>
+                    <a href="finance.html">Finance </a>
+                  </li>
+                  <li>
+                    <a href="marketing.html">Marketing  </a>
+                  </li>
+                  <li>
+                    <a href="compliance.html">Compliance</a>
+                  </li>
+                  <li>
+                    <a href="digital transformation.html">Digital transformation</a>
+                  </li>
+                 
+                </ul>
+              </li>
+           
               <li><a class="page-scroll" href="#insights">Insights</a></li>
               <!-- <li><a class="page-scroll" href="#industies">Industies</a></li>
               <li><a class="page-scroll" href="#contact">Contact</a></li> -->
@@ -327,13 +289,13 @@ margin-left: 86%;
 
 
           </div>
-          <ul class="social-media">
+          <!-- <ul class="social-media">
             <li><a href="#" class="icofont icofont-social-facebook"></a></li>
             <li><a href="#" class="icofont icofont-social-twitter"></a></li>
             <li><a href="#" class="icofont icofont-social-behance"></a></li>
             <li><a href="#" class="icofont icofont-social-dribble"></a></li>
             <li><a href="#" class="icofont icofont-social-linkedin"></a></li>
-          </ul>
+          </ul> -->
         </div>
         <!-- End Side Menu -->
       </nav>
@@ -361,7 +323,7 @@ margin-left: 86%;
                         >
                       </h3> -->
                       <h4>Welcome to</h4>
-                      <h3 class="glow."><span style="">Global Competency Services</span></h3>
+                      <h3 class=""><span>Global Competency Services</span></h3>
                       <!-- <p class="mt-30">
                         <a class="btn btn-lg btn-light-outline btn-square"
                           >View Our Works</a
@@ -1119,7 +1081,7 @@ margin-left: 86%;
         </div>
       </footer> 
       <div class="fixed element animated-border-box">
-        <a href=""><img width="60" height="60" src="assets\images\AiRobot.png"/></a>
+        <a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/9c37e068-26e9-4553-94df-478fa2aafbd8?tenantId=097464b8-069c-453e-9254-c17ec707310d&sourcetime=1716868404558" target="_blank"><img width="60" height="60" src="assets\images\AiRobot.png"/></a>
        </div>
       <!--== Footer End ==-->
      
