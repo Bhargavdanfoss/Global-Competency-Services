@@ -7790,6 +7790,11 @@ hr {
 .hovereffect a:hover {
   color: #e2000f !important;
 }
+.line_height  li{
+
+line-height: 30px;
+}
+
 
 @media only screen and (max-width: 720px) {
   .view-height-100vh {
