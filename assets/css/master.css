@@ -7794,6 +7794,12 @@ hr {
 
 line-height: 30px;
 }
+.post-text h3{
+  cursor: pointer;
+}
+.line-space span{
+  margin-right: 20px;
+}
 
 
 @media only screen and (max-width: 720px) {
