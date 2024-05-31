@@ -7863,4 +7863,71 @@ video {
 }
 }
 
+.border-gradient-grow {
+  width: 200px;
+  height: 200px;
+  border-width: 10px; /* Initial border width */
+  border-style: solid;
+  border-image: linear-gradient(to right, #ff6347, #87ceeb); /* Initial border gradient */
+  border-image-slice: 1;
+  border-radius: 10px;
+  animation: borderGrow 2s infinite alternate;
+}
+
+@keyframes borderGrow {
+  0% {
+    border-width: 10px;
+    border-image: linear-gradient(to right, #ff6347, #87ceeb); /* Initial border gradient */
+  }
+  50% {
+    border-width: 20px; /* Maximum border width */
+    border-image: linear-gradient(to right, #87ceeb, #ff6347); /* New border gradient */
+  }
+  100% {
+    border-width: 10px;
+    border-image: linear-gradient(to right, #ff6347, #87ceeb); /* Return to initial border gradient */
+  }
+}
+
+@keyframes bounce {
+0% {
+  transform: translateY(0);
+}
+50% {
+  transform: translateY(-5px); /* Adjust the bounce height as needed */
+}
+100% {
+  transform: translateY(0);
+}
+}
+
+.element {
+animation: bounce 0.5s ease-in-out infinite; /* Adjust duration and timing function as needed */
+}
+    .fixed {
+position: fixed;
+float: right;
+margin-left: 86%;
+z-index: 99;
+bottom: 10px;
+/* border: 3px solid #8AC007; */
+} 
+
+
+.blink{
+  
+  text-align: center;
+
+}
+.blink span{
+
+
+  color: white;
+  animation: blink 0s linear infinite;
+}
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
+}
 
