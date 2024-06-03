@@ -7979,6 +7979,13 @@ bottom: 10px;
   max-width: 100%;
 }
 
+.border-cus1 img{
+  border: 4px solid black;
+  border-radius: 4px;
+  width: 95%;
+  max-width: 100%;
+}
+
 /* .borderindeximg{
   border: 4px solid black;
   border-radius: 3px;
