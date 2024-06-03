@@ -996,9 +996,12 @@ We're Just an Email Away!
           </div>
         </div>
       </footer> 
-      <div class="fixed element animated-border-box">
+      <div class="moving-element">
+        <a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/9c37e068-26e9-4553-94df-478fa2aafbd8?tenantId=097464b8-069c-453e-9254-c17ec707310d&sourcetime=1716868404558" target="_blank"> <img src="./assets/images/robot.png" width="80" height="80"></a>
+      </div>
+      <!-- <div class="fixed element animated-border-box">
         <a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/9c37e068-26e9-4553-94df-478fa2aafbd8?tenantId=097464b8-069c-453e-9254-c17ec707310d&sourcetime=1716868404558" target="_blank"><img width="60" height="60" src="assets\images\AiRobot.png"/></a>
-       </div>
+       </div> -->
       <!--== Footer End ==-->
      
       <!--== Go to Top  ==-->
@@ -1020,5 +1023,31 @@ We're Just an Email Away!
     <script src="revolution/js/jquery.gcs.revolution.min.js"></script>
 
     <!--== Javascript Plugins End ==-->
+
+    <script>
+      const movingElement = document.querySelector('.moving-element');
+
+      let direction = 1; // 1 for right, -1 for left
+      let position = 0;
+      const speed = 2; // Speed of the animation
+
+      function animate() {
+          const windowWidth = window.innerWidth;
+          const elementWidth = movingElement.clientWidth;
+
+          position += direction * speed;
+
+          // Reverse direction if the element hits the window edges
+          if (position + elementWidth > windowWidth || position < 0) {
+              direction *= -1;
+              movingElement.classList.toggle('flip-horizontal');
+          }
+
+          movingElement.style.left = position + 'px';
+          requestAnimationFrame(animate);
+      }
+
+      animate();
+  </script>
   </body>
 </html>
