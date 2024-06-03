@@ -7942,7 +7942,7 @@ bottom: 10px;
   /* border: 5px solid #f8f8f8; */
   display: block;
 }
-.swing:after{
+/* .swing:after{
   content: '';
   position: absolute;  
   width: 20px; height: 20px;  
@@ -7952,7 +7952,7 @@ bottom: 10px;
   border-bottom: none;
   border-right: none;
   transform: rotate(45deg);
-}
+} */
 /* nail */
 .swing:before{
   content: '';
