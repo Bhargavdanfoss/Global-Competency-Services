@@ -8009,10 +8009,18 @@ bottom: 10px;
   bottom: 0;
   left: 0;
   z-index: 999;
-  /* background: url('https://via.placeholder.com/50') no-repeat center center; */
+
   background-size: cover;
-  transition: transform 0.8s;
+  transition: transform 10s;
 }
+
+.moving-element:hover{
+width: 40px;
+height: 40px;
+transition: width 1s;
+
+}
+
 
 .flip-horizontal {
   transform: scaleX(-1);
