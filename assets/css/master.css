@@ -8015,8 +8015,8 @@ bottom: 10px;
 }
 
 .moving-element:hover{
-width: 43px;
-height: 43px;
+width: 80px;
+height: 80px;
 transition: width 1s;
 
 }
