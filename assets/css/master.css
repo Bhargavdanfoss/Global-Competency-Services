@@ -8011,12 +8011,12 @@ bottom: 10px;
   z-index: 999;
 
   background-size: cover;
-  transition: transform 10s;
+  transition: transform 2s;
 }
 
 .moving-element:hover{
-width: 40px;
-height: 40px;
+width: 43px;
+height: 43px;
 transition: width 1s;
 
 }
