@@ -696,43 +696,43 @@
 
 
 
-// const movingElement = document.querySelector('.moving-element');
+const movingElement = document.querySelector('.moving-element');
 
-// let direction = 1; // 1 for right, -1 for left
-// let position = 0;
-// const speed = 1.5; // Speed of the animation
-// let animationId;
+let direction = 1; // 1 for right, -1 for left
+let position = 0;
+const speed = 1.5; // Speed of the animation
+let animationId;
 
-// function animate() {
-// 	const windowWidth = window.innerWidth;
-// 	const elementWidth = movingElement.clientWidth;
+function animate() {
+	const windowWidth = window.innerWidth;
+	const elementWidth = movingElement.clientWidth;
 
-// 	position += direction * speed;
+	position += direction * speed;
 
-// 	// Reverse direction if the element hits the window edges
-// 	if (position + elementWidth > windowWidth || position < 0) {
-// 		direction *= -1;
-// 		movingElement.classList.toggle('flip-horizontal');
-// 	}
+	// Reverse direction if the element hits the window edges
+	if (position + elementWidth > windowWidth || position < 0) {
+		direction *= -1;
+		movingElement.classList.toggle('flip-horizontal');
+	}
 
-// 	movingElement.style.left = position + 'px';
-// 	animationId = requestAnimationFrame(animate);
-// }
+	movingElement.style.left = position + 'px';
+	animationId = requestAnimationFrame(animate);
+}
 
-// function startAnimation() {
-// 	if (!animationId) {
-// 		animate();
-// 	}
-// }
+function startAnimation() {
+	if (!animationId) {
+		animate();
+	}
+}
 
-// function stopAnimation() {
-// 	if (animationId) {
-// 		cancelAnimationFrame(animationId);
-// 		animationId = null;
-// 	}
-// }
+function stopAnimation() {
+	if (animationId) {
+		cancelAnimationFrame(animationId);
+		animationId = null;
+	}
+}
 
-// movingElement.addEventListener('mouseover', stopAnimation);
-// movingElement.addEventListener('mouseout', startAnimation);
+movingElement.addEventListener('mouseover', stopAnimation);
+movingElement.addEventListener('mouseout', startAnimation);
 
-// startAnimation();
+startAnimation();
