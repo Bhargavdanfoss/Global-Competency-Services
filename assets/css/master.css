@@ -48,7 +48,7 @@
 
 /* Theme Reset Start */
 
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Open+Sans:400,600|Raleway:100,200,300,400");
+@import url("googlefonts.css");
 @import url("bootstrap.min.css");
 @import url("custom-icons.min.css");
 @import url("icofont.min.css");
@@ -122,8 +122,8 @@ a * {
 .spinner {
   width: 66px;
   height: 66px;
-  -webkit-animation: contanim 2s linear infinite;
-  animation: contanim 2s linear infinite;
+  -webkit-animation: contanim 10s linear infinite;
+  animation: contanim 10s linear infinite;
 }
 svg {
   width: 100%;
@@ -8024,4 +8024,11 @@ transition: width 1s;
 
 .flip-horizontal {
   transform: scaleX(-1);
+}
+.widget_categories ul li a, .widget_archive ul li a{
+  font-weight: 400;
+}
+
+.footer-logo{
+  width: 180px;
 }
